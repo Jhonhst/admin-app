@@ -633,11 +633,12 @@ $(function(){
       if(response == 1){
         // location.href = "lista.html"    
         $('#entrar').slideDown();
+        e.preventDefault(); 
       }else{
         alert(response);
-        
+        e.preventDefault(); 
       }
-      e.preventDefault(); 
+      
     });
    
     
