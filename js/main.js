@@ -631,7 +631,8 @@ $(function(){
     // console.log(postData);
     $.post('http://0.0.0.0:8080/config/iniciar-sesion.php', postData , function(response) {
       if(response == 1){
-        location.href = "lista.html"       
+        // location.href = "lista.html"    
+        alert('correcto');
       }else{
         alert(response);
         e.preventDefault(); 
