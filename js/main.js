@@ -625,22 +625,16 @@ $(function(){
 
   $(document).on('click', '#ingresar-sesion', function(e) {
 
-    var formulario = $("#form-ingresar").serializeArray();
+    let usuario = $('#usuario').val();
+    let clave = $('#clave').val();
+    if(usuario == 'aidee' && clave == '115599'){
+      $('#entrar').slideDown();
+      e.preventDefault();
+    }else{
+      alert('usuario o contraseña incorrectos')
+      e.preventDefault();
+    }
 
-    const postData = formulario;
-    // console.log(postData);
-    $.post('http://0.0.0.0:8080/config/iniciar-sesion.php', postData , function(response) {
-      if(response == 1){
-        // location.href = "lista.html"    
-        $('#entrar').slideDown();
-        e.preventDefault(); 
-      }else{
-        alert(response);
-        e.preventDefault(); 
-      }
-      
-    });
-   
     
   });
 
