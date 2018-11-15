@@ -632,12 +632,12 @@ $(function(){
     $.post('http://0.0.0.0:8080/config/iniciar-sesion.php', postData , function(response) {
       if(response == 1){
         // location.href = "lista.html"    
-        alert('correcto');
+        $('#entrar').slideDown();
       }else{
         alert(response);
-        e.preventDefault(); 
+        
       }
-    
+      e.preventDefault(); 
     });
    
     
