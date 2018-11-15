@@ -13,7 +13,7 @@
 .boton-gastos{
     color: rgb(247, 247, 247);
     font-size: 1.5rem;
-    margin-left: 7%;
+    /* margin-left: 7%; */
     text-decoration:none
 }
 .boton-gastos:hover{
@@ -33,7 +33,7 @@
 .boton-venta{
     color: rgb(247, 247, 247);
     font-size: 1.5rem;
-    margin-left: 15%;
+    /* margin-left: 15%; */
 }
 .boton-venta:hover{
     color:rgb(209, 202, 202);
